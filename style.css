@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+ul{
+  color: purple;
+  list-style-position: inside;
+}
+
+.containerGenerale{
+  width: 100%;
+  height: 150px;
+  background: yellow;
+}
+
+
+.secondoContainer{
+  width: 100%;
+  height: calc(100% -150px);
+
+}

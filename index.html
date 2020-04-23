@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2aa3ad4cf.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+
+  <div class="containerGenerale">
+    <input type="text" name="" value="">
+    <button class="cerca" type="button" name="button">cerca</button>
+
+  </div>
+  <div class="secondoContainer">
+
+  </div>
+
+    <script id="film-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <ul>
+      <li>{{title}}</li>
+      <li>{{originalTitle}}</li>
+      <li>{{{vote}}}</li>
+      <li>{{language}}</li>
+    </ul>
+</script>
+
+
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
