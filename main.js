@@ -78,9 +78,12 @@ $(".cerca").click(
          title: titolo,
          originalTitle: titoloOriginale,
          vote: generaStelle(filmTrovato.vote_average),
-         language: filmTrovato.original_language
+         language: flagGenerator(filmTrovato.original_language),
+         // tipologiaPellicola:,
+         posterFilm:posteGenerator(filmTrovato.poster_path)
+
        };
-       
+
        var html = template(context);
        $(".secondoContainer").append(html);
      }
@@ -99,6 +102,31 @@ $(".cerca").click(
 
    }
    return stelle;
+  }
+
+
+
+  function flagGenerator(codiceLinguaBandiere){
+    var immaginiBandiere = ["it","en"];
+    var immaginiBandiereGenerate;
+
+    if(immaginiBandiere.includes(codiceLinguaBandiere)){
+      immaginiBandiereGenerate = '<img src="img/' + codiceLinguaBandiere +'.png" alt="immagine" class="" />';
+      return immaginiBandiereGenerate;
+    }
+    return codiceLinguaBandiere;
+  }
+
+  function posteGenerator(endUrlPoster){
+    var risultatoDato ;
+
+    if(endUrlPoster){
+    var urlPoster= "https://image.tmdb.org/t/p/w185" + endUrlPoster;
+    risultatoDato = '<img src="' + urlPoster +'" alt="immagine poster" class="" />';
+  } else{
+    risultatoDato = "img non disponibile";
+  }
+    return risultatoDato;
   }
 
 });
