@@ -10,9 +10,16 @@
   </head>
   <body>
 
+
   <div class="containerGenerale">
-    <input type="text" name="" value="">
-    <button class="cerca" type="button" name="button">cerca</button>
+    <div class="titolo">
+      <h1>SENIORFLIX</h1>
+    </div>
+    <div class="">
+      <input type="text" name="" value="">
+      <button class="cerca" type="button" name="button">cerca</button>
+    </div>
+
 
   </div>
   <div class="secondoContainer">
@@ -21,15 +28,20 @@
 
     <script id="film-template" type="text/x-handlebars-template">
   <div class="entry">
-    <ul>
-      <li>{{title}}</li>
-      <li>{{originalTitle}}</li>
-      <li>{{{vote}}}</li>
-      <li>{{{language}}}</li>
-      <li>{{tipologiaPellicola}}</li>
-      <li>{{{posterFilm}}}</li>
+    <div class="last">
+      {{{posterFilm}}}
+    </div>
+    <div class="caratteristicheFilm">
+      <ul>
+        <li>{{title}}</li>
+        <li>Titolo : {{originalTitle}}</li>
+        <li>Voto : {{{vote}}}</li>
+        <li>Lingua : {{{language}}}</li>
+        <li>{{tipologiaPellicola}}</li>
+      </ul>
+    </div>
+  </div>
 
-    </ul>
 </script>
 
 

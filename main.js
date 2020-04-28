@@ -111,7 +111,7 @@ $(".cerca").click(
     var immaginiBandiereGenerate;
 
     if(immaginiBandiere.includes(codiceLinguaBandiere)){
-      immaginiBandiereGenerate = '<img src="img/' + codiceLinguaBandiere +'.png" alt="immagine" class="" />';
+      immaginiBandiereGenerate = '<img src="img/' + codiceLinguaBandiere +'.png" alt="immagine" class="bandierine" />';
       return immaginiBandiereGenerate;
     }
     return codiceLinguaBandiere;
@@ -124,7 +124,7 @@ $(".cerca").click(
     var urlPoster= "https://image.tmdb.org/t/p/w185" + endUrlPoster;
     risultatoDato = '<img src="' + urlPoster +'" alt="immagine poster" class="" />';
   } else{
-    risultatoDato = "img non disponibile";
+    risultatoDato = '<img src="img/nondisponibile.jpg" alt="immagine non disponibile" class="nonDisponibile" />';
   }
     return risultatoDato;
   }

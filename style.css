@@ -8,17 +8,77 @@
 ul{
   color: purple;
   list-style-position: inside;
+
+}
+.titolo{
+  color: red;
+}
+
+
+body{
+  background-color: #5cae51;
 }
 
 .containerGenerale{
   width: 100%;
-  height: 150px;
-  background: yellow;
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 .secondoContainer{
-  width: 100%;
-  height: calc(100% -150px);
 
+  width:80%;
+  height: calc(100% -100px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.entry{
+  width: calc((100% / 5)- 30px);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+.last{
+  width: 100%;
+  height: 100%;
+}
+.last img{
+  width: 100%;
+  height: 100%;
+
+}
+
+/* .last:hover{
+  display: none;
+} */
+.caratteristicheFilm{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+/* .caratteristicheFilm:hover{
+  display: block;
+
+} */
+.entry:hover .last{
+  display: none;
+}
+.entry:hover .caratteristicheFilm{
+  display: block;
+
+}
+img.nonDisponibile{
+  width: 185px;
+  height: 100%;
+}
+
+img.bandierine{
+  margin-top: 30px;
 }
